@@ -171,5 +171,3 @@ Medical-Summarizer/
 - Frontend hot-reloads automatically (just save files)
 - Check browser console (F12) for frontend errors
 - Check terminal for backend errors
-
-Happy coding! 🚀
