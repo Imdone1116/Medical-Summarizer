@@ -6,6 +6,28 @@ __pycache__/
 # C extensions
 *.so
 
+# Claude
+.claude/*
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Frontend build
+frontend/build/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Backend
+.env.example
+
+# Production
+/build
+
 # Distribution / packaging
 .Python
 build/

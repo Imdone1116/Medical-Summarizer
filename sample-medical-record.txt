@@ -1,0 +1,161 @@
+PATIENT MEDICAL RECORD
+====================
+
+PATIENT INFORMATION
+Name: John Doe
+DOB: 01/15/1965
+Age: 58
+Gender: Male
+MRN: 123456789
+
+ALLERGIES
+- Penicillin (rash, hives)
+- Sulfa drugs (severe allergic reaction)
+
+CURRENT MEDICATIONS
+1. Lisinopril 10mg - Once daily for hypertension
+   Renewal Date: 03/15/2024
+
+2. Metformin 1000mg - Twice daily for Type 2 Diabetes
+   Renewal Date: 02/28/2024
+
+3. Atorvastatin 20mg - Once daily at bedtime for high cholesterol
+   Renewal Date: 04/01/2024
+
+4. Aspirin 81mg - Once daily for cardiovascular protection
+   Renewal Date: 05/15/2024
+
+MEDICAL CONDITIONS
+Major:
+- Type 2 Diabetes Mellitus (diagnosed 2015)
+- Hypertension (diagnosed 2012)
+- Hyperlipidemia (diagnosed 2014)
+- Coronary Artery Disease (diagnosed 2018)
+
+Minor:
+- Mild osteoarthritis in knees
+- Seasonal allergies
+- History of GERD (controlled)
+
+RECENT APPOINTMENTS
+Last Visit: 01/10/2024
+- Annual physical examination
+- BP: 128/82 mmHg (improved from last visit)
+- Weight: 185 lbs (down 5 lbs)
+- Provider notes: Patient compliant with medications, diet improvements noted
+
+Upcoming Visits:
+- Cardiology follow-up: 02/15/2024 at 2:00 PM
+- Diabetes management: 03/20/2024 at 10:00 AM
+- Routine lab work: 02/01/2024 at 8:00 AM (fasting required)
+
+RECENT LAB RESULTS (01/10/2024)
+
+Hemoglobin A1C: 7.2% (target <7.0%) - HIGH
+Fasting Glucose: 142 mg/dL (normal 70-100) - HIGH
+Total Cholesterol: 195 mg/dL (normal <200) - NORMAL
+LDL Cholesterol: 115 mg/dL (normal <100) - HIGH
+HDL Cholesterol: 48 mg/dL (normal >40) - NORMAL
+Triglycerides: 160 mg/dL (normal <150) - HIGH
+
+Creatinine: 1.1 mg/dL (normal 0.7-1.3) - NORMAL
+eGFR: 68 mL/min/1.73m² (normal >60) - NORMAL
+Potassium: 4.2 mEq/L (normal 3.5-5.0) - NORMAL
+Sodium: 140 mEq/L (normal 136-145) - NORMAL
+
+MAJOR SURGERIES
+Previous:
+- Coronary artery bypass graft (CABG) - 06/15/2019
+  Status: Recovered well, no complications
+  Surgeon: Dr. Sarah Johnson, MD
+
+Scheduled:
+- None at this time
+
+RECENT IMAGING STUDIES
+
+Echocardiogram (12/05/2023):
+- Ejection fraction: 55% (normal)
+- Mild left ventricular hypertrophy
+- No significant valvular disease
+- Relevance: Monitoring cardiac function post-CABG
+
+Chest X-ray (01/10/2024):
+- Clear lungs, no acute findings
+- Cardiac silhouette normal
+- Relevance: Routine annual screening
+
+CLINICAL NOTES
+
+Provider Notes (01/10/2024):
+Patient continues to do well post-CABG. Compliance with cardiac rehabilitation exercises has been excellent. Blood sugar control has improved but still needs optimization. Discussed dietary modifications and importance of regular exercise. Patient reports occasional chest discomfort with exertion but describes it as different from pre-operative angina. Advised to monitor and report any changes.
+
+Diet recommendations:
+- Low sodium (<2000mg/day)
+- Low saturated fat
+- Carbohydrate counting for diabetes management
+- Increase fiber intake
+
+Exercise plan:
+- 30 minutes moderate activity 5 days/week
+- Cardiac rehabilitation program (currently attending)
+
+CLINICAL TRIAL SCREENING NOTES
+Patient may be eligible for:
+- Diabetes prevention studies (based on A1C levels)
+- Cardiovascular outcomes trials for Type 2 Diabetes patients with CAD
+- Post-CABG long-term outcome studies
+
+Inclusion criteria met:
+✓ Type 2 Diabetes with suboptimal glucose control
+✓ History of coronary artery disease
+✓ Age 50-65
+✓ Willing to participate in follow-up visits
+
+Exclusion criteria to consider:
+- Allergy to study medications (check individual trial protocols)
+- Active participation in other clinical trials
+
+SOCIAL HISTORY
+- Non-smoker (quit 2020, 35-year history)
+- Occasional alcohol use (1-2 drinks per week)
+- Married, supportive family
+- Retired accountant
+- Physically active, walks daily
+
+FAMILY HISTORY
+- Father: Myocardial infarction at age 62 (deceased)
+- Mother: Type 2 Diabetes, Hypertension (living, age 82)
+- Sister: Hyperlipidemia (age 55)
+- Brother: Healthy (age 60)
+
+IMMUNIZATIONS
+- Influenza vaccine: 10/2023
+- COVID-19 vaccine: Booster 09/2023
+- Pneumococcal vaccine: 01/2020
+- Tetanus: 2021
+
+CARE TEAM
+Primary Care: Dr. Michael Chen, MD
+Cardiologist: Dr. Emily Rodriguez, MD
+Endocrinologist: Dr. James Park, MD
+Registered Dietitian: Lisa Thompson, RD
+
+PATIENT GOALS
+1. Reduce A1C to below 7.0% within 3 months
+2. Maintain blood pressure below 130/80 mmHg
+3. Lose 10 more pounds by summer
+4. Continue cardiac rehabilitation program
+5. Improve dietary habits and reduce processed foods
+
+REMINDERS
+- Schedule routine lab work (fasting) for 02/01/2024
+- Refill Metformin prescription by 02/28/2024
+- Prepare questions for cardiology appointment on 02/15/2024
+- Continue daily blood pressure monitoring at home
+- Check blood glucose 2x daily and log results
+
+EMERGENCY CONTACTS
+Spouse: Jane Doe - (555) 123-4567
+Son: Robert Doe - (555) 234-5678
+Primary Care Office: (555) 345-6789

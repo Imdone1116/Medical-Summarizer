@@ -1,0 +1,339 @@
+.patient-dashboard {
+  background-color: #f5f7fa;
+}
+
+.welcome-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+}
+
+.welcome-section h3 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+
+.welcome-section p {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.95;
+}
+
+.patient-content {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 6px;
+  border-left: 4px solid #3498db;
+}
+
+.patient-content p {
+  margin: 0;
+  line-height: 1.8;
+  color: #2c3e50;
+  font-size: 15px;
+}
+
+/* Medications */
+.medications-patient-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.medication-patient-card {
+  background-color: white;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.medication-patient-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.med-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.med-name {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 18px;
+  flex: 1;
+}
+
+.renewal-badge {
+  background-color: #ff9800;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.med-info p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.what-it-does {
+  background-color: #e3f2fd;
+  padding: 12px;
+  border-radius: 6px;
+  border-left: 3px solid #2196f3;
+  font-style: italic;
+}
+
+.renewal-info {
+  color: #ff9800;
+  font-weight: 500;
+}
+
+.explain-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.explain-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Upcoming Care */
+.upcoming-care-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.care-item {
+  display: flex;
+  background-color: white;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 20px;
+  gap: 15px;
+}
+
+.care-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.care-details {
+  flex: 1;
+}
+
+.care-details h4 {
+  margin: 0 0 8px 0;
+  color: #2c3e50;
+  font-size: 16px;
+}
+
+.care-date {
+  color: #3498db;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.care-expectation {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Allergies */
+.allergies-section {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+}
+
+.allergies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.allergy-badge {
+  background-color: #ff5722;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Reminders */
+.reminders-section {
+  background-color: #e8f5e9;
+  border-left: 4px solid #4caf50;
+}
+
+.reminders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reminder-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.reminder-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.reminder-item p {
+  margin: 0;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+.reminder-content {
+  flex: 1;
+}
+
+.reminder-action {
+  margin: 0 0 5px 0;
+  color: #2c3e50;
+  font-size: 15px;
+}
+
+.reminder-date {
+  margin: 3px 0;
+  color: #4caf50;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.reminder-details {
+  margin: 5px 0 0 0;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Explanation Modal */
+.explanation-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.explanation-modal {
+  background-color: white;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  animation: slideUp 0.3s;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.modal-header h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 20px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #95a5a6;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.close-btn:hover {
+  background-color: #f8f9fa;
+  color: #2c3e50;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-content p {
+  margin: 0;
+  line-height: 1.8;
+  color: #2c3e50;
+}
+
+.modal-content .loading {
+  text-align: center;
+  color: #95a5a6;
+  font-style: italic;
+}

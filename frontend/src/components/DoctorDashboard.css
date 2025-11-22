@@ -1,0 +1,267 @@
+.dashboard-container {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dashboard-title {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.dashboard-section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 20px;
+  color: #34495e;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+/* Medications */
+.medications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.medication-card {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.medication-name {
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+.medication-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.renewal-date {
+  color: #e67e22;
+  font-weight: 500;
+}
+
+/* Appointments */
+.appointments-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.appointment-card {
+  background-color: #f8f9fa;
+  border-left: 4px solid #3498db;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.appointment-card.upcoming {
+  border-left-color: #2ecc71;
+}
+
+.appointment-card h4 {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+}
+
+.appointment-card p {
+  margin: 0;
+  color: #555;
+}
+
+/* Labs */
+.labs-table {
+  overflow-x: auto;
+}
+
+.labs-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.labs-table th,
+.labs-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.labs-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.labs-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-normal {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-high {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status-low {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+/* Surgeries */
+.surgeries-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.surgery-card {
+  background-color: #f8f9fa;
+  border-left: 4px solid #9b59b6;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.surgery-card.scheduled {
+  border-left-color: #e74c3c;
+}
+
+.surgery-card h4 {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+}
+
+.surgery-card p {
+  margin: 0;
+  color: #555;
+}
+
+/* Conditions */
+.conditions-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.condition-card {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.condition-card.major {
+  border-left: 4px solid #e74c3c;
+}
+
+.condition-card.minor {
+  border-left: 4px solid #f39c12;
+}
+
+.condition-card h4 {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+}
+
+.condition-card p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Imaging */
+.imaging-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.imaging-card {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.imaging-card h4 {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+}
+
+.imaging-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.relevance {
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+/* Clinical Notes */
+.clinical-notes {
+  background-color: #f8f9fa;
+  border-left: 4px solid #16a085;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.clinical-notes p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* No Data / Error States */
+.no-data,
+.no-summary {
+  text-align: center;
+  color: #95a5a6;
+  font-style: italic;
+  padding: 20px;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.error-message pre {
+  margin-top: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+}

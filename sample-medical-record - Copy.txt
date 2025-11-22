@@ -1,0 +1,96 @@
+PATIENT MEDICAL RECORD
+====================
+
+PATIENT INFORMATION
+Name: John Doe
+DOB: 01/15/1965
+Age: 58
+Gender: Male
+MRN: 123456789
+
+ALLERGIES
+- Penicillin (rash, hives)
+- Sulfa drugs (severe allergic reaction)
+
+CURRENT MEDICATIONS
+1. Lisinopril 10mg - Once daily for hypertension
+   Renewal Date: 03/15/2024
+
+MEDICAL CONDITIONS
+Major:
+- Type 2 Diabetes Mellitus (diagnosed 2015)
+
+Minor:
+- Mild osteoarthritis in knees
+
+RECENT APPOINTMENTS
+Last Visit: 01/10/2024
+- Annual physical examination
+
+Upcoming Visits:
+- Cardiology follow-up: 02/15/2024 at 2:00 PM
+
+RECENT LAB RESULTS (01/10/2024)
+
+Hemoglobin A1C: 7.2% (target <7.0%) - HIGH
+
+MAJOR SURGERIES
+Previous:
+- Coronary artery bypass graft (CABG) - 06/15/2019
+  Status: Recovered well, no complications
+  Surgeon: Dr. Sarah Johnson, MD
+
+Scheduled:
+- None at this time
+
+RECENT IMAGING STUDIES
+
+Echocardiogram (12/05/2023):
+- Ejection fraction: 55% (normal)
+
+Chest X-ray (01/10/2024):
+- Clear lungs, no acute findings
+
+CLINICAL NOTES
+
+Provider Notes (01/10/2024):
+Patient continues to do well post-CABG.
+
+Diet recommendations:
+- Low sodium (<2000mg/day)
+
+Exercise plan:
+- 30 minutes moderate activity 5 days/week
+
+CLINICAL TRIAL SCREENING NOTES
+Patient may be eligible for:
+- Diabetes prevention studies (based on A1C levels)
+
+Inclusion criteria met:
+✓ Type 2 Diabetes with suboptimal glucose control
+
+Exclusion criteria to consider:
+- Allergy to study medications (check individual trial protocols)
+
+SOCIAL HISTORY
+- Non-smoker (quit 2020, 35-year history)
+
+FAMILY HISTORY
+- Father: Myocardial infarction at age 62 (deceased)
+
+IMMUNIZATIONS
+- Influenza vaccine: 10/2023
+
+CARE TEAM
+Primary Care: Dr. Michael Chen, MD
+
+PATIENT GOALS
+1. Reduce A1C to below 7.0% within 3 months
+
+REMINDERS
+- Schedule routine lab work (fasting) for 02/01/2024
+
+EMERGENCY CONTACTS
+Spouse: Jane Doe - (555) 123-4567
+Son: Robert Doe - (555) 234-5678
+Primary Care Office: (555) 345-6789
