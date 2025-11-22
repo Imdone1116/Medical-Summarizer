@@ -1,0 +1,146 @@
+PATIENT MEDICAL RECORD
+====================
+
+PATIENT INFORMATION
+Name: Jane Smith
+DOB: 03/22/1975
+Age: 50
+Gender: Female
+MRN: 987654321
+
+ALLERGIES
+- Latex (severe rash)
+- Codeine (nausea, vomiting)
+
+CURRENT MEDICATIONS
+1. Amlodipine 5mg - Once daily for hypertension
+   Renewal Date: 04/10/2024
+
+2. Levothyroxine 75mcg - Once daily for hypothyroidism
+   Renewal Date: 03/15/2024
+
+3. Omeprazole 20mg - Once daily for GERD
+   Renewal Date: 05/01/2024
+
+MEDICAL CONDITIONS
+Major:
+- Hypothyroidism (diagnosed 2005)
+- Hypertension (diagnosed 2010)
+- GERD (diagnosed 2012)
+
+Minor:
+- Seasonal allergies
+- History of migraines (controlled)
+
+RECENT APPOINTMENTS
+Last Visit: 02/15/2024
+- Follow-up for hypothyroidism
+- BP: 135/85 mmHg
+- Weight: 160 lbs
+- Provider notes: Patient compliant with medications, thyroid levels stable
+
+Upcoming Visits:
+- Annual physical: 03/10/2024 at 9:00 AM
+- Routine lab work: 03/05/2024 at 8:00 AM (fasting required)
+
+RECENT LAB RESULTS (02/15/2024)
+
+TSH: 2.5 mIU/L (normal 0.4-4.0) - NORMAL
+Free T4: 1.2 ng/dL (normal 0.8-1.8) - NORMAL
+Total Cholesterol: 210 mg/dL (normal <200) - HIGH
+LDL Cholesterol: 130 mg/dL (normal <100) - HIGH
+HDL Cholesterol: 55 mg/dL (normal >40) - NORMAL
+Triglycerides: 180 mg/dL (normal <150) - HIGH
+
+Creatinine: 0.9 mg/dL (normal 0.7-1.3) - NORMAL
+eGFR: 75 mL/min/1.73m² (normal >60) - NORMAL
+Potassium: 4.0 mEq/L (normal 3.5-5.0) - NORMAL
+Sodium: 138 mEq/L (normal 136-145) - NORMAL
+
+MAJOR SURGERIES
+Previous:
+- Cholecystectomy (gallbladder removal) - 08/20/2015
+  Status: Recovered well, no complications
+  Surgeon: Dr. Alan Brown, MD
+
+Scheduled:
+- None at this time
+
+RECENT IMAGING STUDIES
+
+Abdominal Ultrasound (02/10/2024):
+- No abnormalities detected
+- Relevance: Routine follow-up for GERD
+
+Chest X-ray (02/15/2024):
+- Clear lungs, no acute findings
+- Cardiac silhouette normal
+- Relevance: Routine annual screening
+
+CLINICAL NOTES
+
+Provider Notes (02/15/2024):
+Patient continues to do well on current medications. Discussed importance of dietary modifications to manage cholesterol levels. Encouraged regular physical activity. Patient reports occasional heartburn, advised to avoid trigger foods and continue omeprazole.
+
+Diet recommendations:
+- Low sodium (<2000mg/day)
+- Low saturated fat
+- Increase fiber intake
+
+Exercise plan:
+- 30 minutes moderate activity 5 days/week
+
+CLINICAL TRIAL SCREENING NOTES
+Patient may be eligible for:
+- Cholesterol management studies
+- GERD treatment trials
+
+Inclusion criteria met:
+✓ Hypertension with suboptimal cholesterol control
+✓ Age 50-65
+✓ Willing to participate in follow-up visits
+
+Exclusion criteria to consider:
+- Allergy to study medications (check individual trial protocols)
+- Active participation in other clinical trials
+
+SOCIAL HISTORY
+- Non-smoker
+- Occasional alcohol use (1-2 drinks per week)
+- Married, supportive family
+- Retired teacher
+- Physically active, enjoys gardening
+
+FAMILY HISTORY
+- Father: Hypertension, Stroke (deceased at 70)
+- Mother: Hypothyroidism (living, age 78)
+- Sister: Healthy (age 52)
+- Brother: Type 2 Diabetes (age 55)
+
+IMMUNIZATIONS
+- Influenza vaccine: 10/2023
+- COVID-19 vaccine: Booster 09/2023
+- Pneumococcal vaccine: 01/2020
+- Tetanus: 2021
+
+CARE TEAM
+Primary Care: Dr. Susan Lee, MD
+Endocrinologist: Dr. Robert White, MD
+Registered Dietitian: Karen Green, RD
+
+PATIENT GOALS
+1. Reduce LDL cholesterol to below 100 mg/dL within 6 months
+2. Maintain blood pressure below 130/80 mmHg
+3. Lose 5 pounds by summer
+4. Improve dietary habits and reduce processed foods
+
+REMINDERS
+- Schedule routine lab work (fasting) for 03/05/2024
+- Refill Levothyroxine prescription by 03/15/2024
+- Prepare questions for annual physical on 03/10/2024
+- Continue daily blood pressure monitoring at home
+
+EMERGENCY CONTACTS
+Spouse: Mark Smith - (555) 987-6543
+Daughter: Emily Smith - (555) 876-5432
+Primary Care Office: (555) 765-4321
