@@ -107,7 +107,7 @@ function App() {
       {/* Header */}
       <header className="app-header">
         <div className="header-content">
-          <h1>Medical Note Summarizer</h1>
+          <h1>MedSum</h1>
           <p className="header-subtitle">
             AI-powered medical record analysis and summarization
           </p>

@@ -1,6 +1,6 @@
 # Quick Setup Guide
 
-Follow these steps to get the Medical Note Summarizer running on your machine.
+Follow these steps to get MedSum running on your machine.
 
 ## Prerequisites Check
 

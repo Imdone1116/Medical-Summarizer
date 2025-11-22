@@ -1,4 +1,4 @@
-# Medical Note Summarizer
+# MedSum
 
 An AI-powered web application that helps patients and doctors better understand and analyze medical records using Claude AI.
 
