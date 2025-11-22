@@ -100,7 +100,9 @@ const ChatInterface = ({ medicalRecords, viewType, onSendMessage }) => {
     <div className="chat-interface">
       <div className="chat-header">
         <div className="chat-title">
-          <h3>💬 Ask Questions About Your Records</h3>
+          <h3>{viewType === 'patient'
+              ? '💬 Ask Questions About Your Records'
+              : '💬 Ask Questions About Your Patient\'s Records'}</h3>
           <p className="chat-subtitle">
             {viewType === 'patient'
               ? 'Get answers about your health in simple terms'
