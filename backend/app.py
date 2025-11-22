@@ -122,7 +122,7 @@ Be concise, accurate, and helpful. If information is not in the records, say so 
 
         # Call Claude API
         message = client.messages.create(
-            model="claude-3-5-sonnet-20241022",
+            model="claude-sonnet-4-5-20250929",
             max_tokens=2048,
             system=system_prompt,
             messages=messages
@@ -161,7 +161,7 @@ Provide:
 Keep the explanation brief and easy to understand."""
 
         message = client.messages.create(
-            model="claude-3-5-sonnet-20241022",
+            model="claude-sonnet-4-5-20250929",
             max_tokens=1024,
             messages=[
                 {"role": "user", "content": prompt}
