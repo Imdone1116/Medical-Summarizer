@@ -185,7 +185,7 @@ def explain_medical_term():
         if not term:
             return jsonify({"error": "No term provided"}), 400
 
-        prompt = f"""Explain the medical term "{term}" in simple, layman's terms that anyone can understand.
+        prompt = f"""Explain the medical term "{term}" in simple, layman's terms that anyone can understand. Make it addressed to the user in second-person view. i.e. "You are..."
 
 Context from medical records: {context}
 
