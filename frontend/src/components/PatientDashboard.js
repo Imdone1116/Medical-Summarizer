@@ -18,16 +18,31 @@ const PatientDashboard = ({ summary, onExplainTerm }) => {
   // Parse the summary if it's a string
   let parsedSummary;
   try {
-    // Substring needed to remove the json tag around the curly brackets
-    
-    parsedSummary = typeof summary === 'string' ? JSON.parse(summary.substring(7, summary.length-3)) : summary;
-    
+    parsedSummary = typeof summary === 'string' ? JSON.parse(summary) : summary;
   } catch (error) {
+    console.error('JSON Parse Error:', error);
+    console.error('Raw summary:', summary);
     return (
       <div className="dashboard-container">
         <div className="error-message">
-          Error parsing summary. Raw response:
-          <pre>{summary}</pre>
+          <h3>⚠️ Error Parsing Summary</h3>
+          <p>The AI response could not be parsed as JSON. This usually means the AI didn't follow the expected format.</p>
+          <details>
+            <summary>Click to see raw response</summary>
+            <pre style={{
+              maxHeight: '400px',
+              overflow: 'auto',
+              background: '#f5f5f5',
+              padding: '10px',
+              borderRadius: '4px',
+              fontSize: '12px'
+            }}>
+              {typeof summary === 'string' ? summary : JSON.stringify(summary, null, 2)}
+            </pre>
+          </details>
+          <p style={{ marginTop: '10px', fontSize: '14px' }}>
+            Try regenerating the summary. If the problem persists, there may be an issue with the backend.
+          </p>
         </div>
       </div>
     );
@@ -67,6 +82,40 @@ const PatientDashboard = ({ summary, onExplainTerm }) => {
     return daysUntil <= 30 && daysUntil >= 0;
   };
 
+  // Helper function to render data that could be string, object, or array
+  const renderFlexibleData = (data) => {
+    if (!data) return null;
+
+    if (typeof data === 'string') {
+      return <p>{data}</p>;
+    }
+
+    if (Array.isArray(data)) {
+      return (
+        <ul style={{ margin: '8px 0', paddingLeft: '20px' }}>
+          {data.map((item, idx) => (
+            <li key={idx}>{renderFlexibleData(item)}</li>
+          ))}
+        </ul>
+      );
+    }
+
+    if (typeof data === 'object') {
+      return (
+        <div style={{ marginTop: '8px' }}>
+          {Object.entries(data).map(([key, value]) => (
+            <p key={key}>
+              <strong>{key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}:</strong>{' '}
+              {typeof value === 'object' ? JSON.stringify(value) : value}
+            </p>
+          ))}
+        </div>
+      );
+    }
+
+    return <p>{String(data)}</p>;
+  };
+
   return (
     <div className="dashboard-container patient-dashboard">
       <h2 className="dashboard-title">Your Health Summary</h2>
@@ -82,7 +131,7 @@ const PatientDashboard = ({ summary, onExplainTerm }) => {
         <section className="dashboard-section">
           <h3 className="section-title">🩺 Your Health Conditions</h3>
           <div className="patient-content">
-            <p>{conditions_summary}</p>
+            {renderFlexibleData(conditions_summary)}
           </div>
         </section>
       )}
@@ -148,7 +197,7 @@ const PatientDashboard = ({ summary, onExplainTerm }) => {
         <section className="dashboard-section">
           <h3 className="section-title">🧪 Recent Test Results</h3>
           <div className="patient-content">
-            <p>{recent_tests}</p>
+            {renderFlexibleData(recent_tests)}
           </div>
         </section>
       )}
@@ -158,7 +207,7 @@ const PatientDashboard = ({ summary, onExplainTerm }) => {
         <section className="dashboard-section">
           <h3 className="section-title">🏥 Procedures & Surgeries</h3>
           <div className="patient-content">
-            <p>{surgeries}</p>
+            {renderFlexibleData(surgeries)}
           </div>
         </section>
       )}

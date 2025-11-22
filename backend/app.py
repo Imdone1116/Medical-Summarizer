@@ -2,6 +2,8 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import anthropic
 import os
+import re
+import json
 from datetime import datetime
 
 app = Flask(__name__)
@@ -9,6 +11,33 @@ CORS(app)
 
 # Initialize Claude client
 client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+
+def extract_json_from_response(text):
+    """Extract JSON from Claude's response, handling markdown code blocks"""
+    # Try to find JSON in markdown code blocks
+    json_match = re.search(r'```json\s*\n(.*?)\n```', text, re.DOTALL)
+    if json_match:
+        return json_match.group(1).strip()
+
+    # Try to find JSON in generic code blocks
+    json_match = re.search(r'```\s*\n(.*?)\n```', text, re.DOTALL)
+    if json_match:
+        potential_json = json_match.group(1).strip()
+        # Verify it's actually JSON
+        try:
+            json.loads(potential_json)
+            return potential_json
+        except:
+            pass
+
+    # If no code blocks, try to extract JSON object directly
+    # Look for content between outermost { and }
+    json_match = re.search(r'(\{.*\})', text, re.DOTALL)
+    if json_match:
+        return json_match.group(1).strip()
+
+    # Return as-is if no patterns match
+    return text.strip()
 
 @app.route('/api/health', methods=['GET'])
 def health_check():
@@ -69,14 +98,21 @@ Use simple language that anyone can understand. Avoid medical jargon. Respond wi
         )
 
         response_text = message.content[0].text
-        j = jsonify({
-            "summary": response_text,
-            "view_type": view_type,
-            "timestamp": datetime.now().isoformat()
-        })
-        
+
+        # Extract and validate JSON from response
+        cleaned_json = extract_json_from_response(response_text)
+
+        # Validate that it's actually valid JSON
+        try:
+            json.loads(cleaned_json)
+        except json.JSONDecodeError as e:
+            return jsonify({
+                "error": f"Invalid JSON response from AI: {str(e)}",
+                "raw_response": response_text
+            }), 500
+
         return jsonify({
-            "summary": response_text,
+            "summary": cleaned_json,
             "view_type": view_type,
             "timestamp": datetime.now().isoformat()
         })

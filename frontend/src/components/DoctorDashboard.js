@@ -17,11 +17,29 @@ const DoctorDashboard = ({ summary }) => {
   try {
     parsedSummary = typeof summary === 'string' ? JSON.parse(summary) : summary;
   } catch (error) {
+    console.error('JSON Parse Error:', error);
+    console.error('Raw summary:', summary);
     return (
       <div className="dashboard-container">
         <div className="error-message">
-          Error parsing summary. Raw response:
-          <pre>{summary}</pre>
+          <h3>⚠️ Error Parsing Summary</h3>
+          <p>The AI response could not be parsed as JSON. This usually means the AI didn't follow the expected format.</p>
+          <details>
+            <summary>Click to see raw response</summary>
+            <pre style={{
+              maxHeight: '400px',
+              overflow: 'auto',
+              background: '#f5f5f5',
+              padding: '10px',
+              borderRadius: '4px',
+              fontSize: '12px'
+            }}>
+              {typeof summary === 'string' ? summary : JSON.stringify(summary, null, 2)}
+            </pre>
+          </details>
+          <p style={{ marginTop: '10px', fontSize: '14px' }}>
+            Try regenerating the summary. If the problem persists, there may be an issue with the backend.
+          </p>
         </div>
       </div>
     );
@@ -48,6 +66,40 @@ const DoctorDashboard = ({ summary }) => {
       default:
         return '';
     }
+  };
+
+  // Helper function to render data that could be string, object, or array
+  const renderFlexibleData = (data) => {
+    if (!data) return null;
+
+    if (typeof data === 'string') {
+      return <p>{data}</p>;
+    }
+
+    if (Array.isArray(data)) {
+      return (
+        <ul style={{ margin: '8px 0', paddingLeft: '20px' }}>
+          {data.map((item, idx) => (
+            <li key={idx}>{renderFlexibleData(item)}</li>
+          ))}
+        </ul>
+      );
+    }
+
+    if (typeof data === 'object') {
+      return (
+        <div style={{ marginTop: '8px' }}>
+          {Object.entries(data).map(([key, value]) => (
+            <p key={key}>
+              <strong>{key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}:</strong>{' '}
+              {typeof value === 'object' ? JSON.stringify(value) : value}
+            </p>
+          ))}
+        </div>
+      );
+    }
+
+    return <p>{String(data)}</p>;
   };
 
   return (
@@ -84,13 +136,13 @@ const DoctorDashboard = ({ summary }) => {
           {appointments.last_visit && (
             <div className="appointment-card">
               <h4>Last Visit</h4>
-              <p>{appointments.last_visit}</p>
+              {renderFlexibleData(appointments.last_visit)}
             </div>
           )}
           {appointments.upcoming_visits && (
             <div className="appointment-card upcoming">
               <h4>Upcoming Visits</h4>
-              <p>{appointments.upcoming_visits}</p>
+              {renderFlexibleData(appointments.upcoming_visits)}
             </div>
           )}
           {!appointments.last_visit && !appointments.upcoming_visits && (
@@ -141,13 +193,13 @@ const DoctorDashboard = ({ summary }) => {
           {major_surgeries.previous && (
             <div className="surgery-card">
               <h4>Previous</h4>
-              <p>{major_surgeries.previous}</p>
+              {renderFlexibleData(major_surgeries.previous)}
             </div>
           )}
           {major_surgeries.scheduled && (
             <div className="surgery-card scheduled">
               <h4>Scheduled</h4>
-              <p>{major_surgeries.scheduled}</p>
+              {renderFlexibleData(major_surgeries.scheduled)}
             </div>
           )}
           {!major_surgeries.previous && !major_surgeries.scheduled && (
@@ -163,13 +215,13 @@ const DoctorDashboard = ({ summary }) => {
           {conditions.major && (
             <div className="condition-card major">
               <h4>Major Conditions</h4>
-              <p>{conditions.major}</p>
+              {renderFlexibleData(conditions.major)}
             </div>
           )}
           {conditions.minor && (
             <div className="condition-card minor">
               <h4>Minor Conditions</h4>
-              <p>{conditions.minor}</p>
+              {renderFlexibleData(conditions.minor)}
             </div>
           )}
           {!conditions.major && !conditions.minor && (
@@ -202,7 +254,7 @@ const DoctorDashboard = ({ summary }) => {
         <section className="dashboard-section">
           <h3 className="section-title">🔬 Clinical Trial Notes</h3>
           <div className="clinical-notes">
-            <p>{clinical_trial_notes}</p>
+            {renderFlexibleData(clinical_trial_notes)}
           </div>
         </section>
       )}
