@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './PatientDashboard.css';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 const PatientDashboard = ({ summary, onExplainTerm }) => {
   const [selectedTerm, setSelectedTerm] = useState(null);
@@ -269,7 +271,7 @@ const PatientDashboard = ({ summary, onExplainTerm }) => {
             </div>
             <div className="modal-content">
               {explanation ? (
-                <p>{explanation}</p>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>{explanation}</ReactMarkdown>
               ) : (
                 <p className="loading">Loading explanation...</p>
               )}
