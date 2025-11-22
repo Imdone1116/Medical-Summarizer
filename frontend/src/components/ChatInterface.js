@@ -1,4 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import './ChatInterface.css';
 
 const ChatInterface = ({ medicalRecords, viewType, onSendMessage }) => {
@@ -139,7 +141,15 @@ const ChatInterface = ({ medicalRecords, viewType, onSendMessage }) => {
               {message.role === 'user' ? '👤' : '🤖'}
             </div>
             <div className="message-content">
-              <div className="message-text">{message.content}</div>
+              <div className="message-text">
+                {message.role === 'assistant' ? (
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    {message.content}
+                  </ReactMarkdown>
+                ) : (
+                  message.content
+                )}
+              </div>
               <div className="message-timestamp">
                 {new Date(message.timestamp).toLocaleTimeString()}
               </div>
