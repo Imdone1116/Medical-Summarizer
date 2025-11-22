@@ -306,7 +306,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - Built with Claude AI by Anthropic
 - React.js and Flask communities
-- Medical professionals who provided feedback on requirements
 
 ## Contact
 
