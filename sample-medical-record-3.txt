@@ -1,0 +1,139 @@
+PATIENT MEDICAL RECORD
+====================
+
+PATIENT INFORMATION
+Name: Robert Johnson
+DOB: 07/12/1980
+Age: 45
+Gender: Male
+MRN: 456789123
+
+ALLERGIES
+- None reported
+
+CURRENT MEDICATIONS
+1. Losartan 50mg - Once daily for hypertension
+   Renewal Date: 06/01/2024
+
+2. Albuterol Inhaler - As needed for asthma
+   Renewal Date: 05/15/2024
+
+3. Vitamin D 2000 IU - Once daily for deficiency
+   Renewal Date: 07/01/2024
+
+MEDICAL CONDITIONS
+Major:
+- Hypertension (diagnosed 2015)
+- Asthma (diagnosed childhood)
+- Vitamin D deficiency (diagnosed 2023)
+
+Minor:
+- Seasonal allergies
+- History of eczema (resolved)
+
+RECENT APPOINTMENTS
+Last Visit: 10/20/2024
+- Follow-up for hypertension
+- BP: 140/90 mmHg
+- Weight: 200 lbs
+- Provider notes: Patient advised to increase physical activity and reduce sodium intake
+
+Upcoming Visits:
+- Pulmonology check-up: 12/10/2024 at 11:00 AM
+- Routine lab work: 11/15/2024 at 8:30 AM (fasting required)
+
+RECENT LAB RESULTS (10/20/2024)
+
+Vitamin D: 25 ng/mL (normal 30-100) - LOW
+Total Cholesterol: 190 mg/dL (normal <200) - NORMAL
+LDL Cholesterol: 110 mg/dL (normal <100) - HIGH
+HDL Cholesterol: 50 mg/dL (normal >40) - NORMAL
+Triglycerides: 140 mg/dL (normal <150) - NORMAL
+
+Creatinine: 1.0 mg/dL (normal 0.7-1.3) - NORMAL
+eGFR: 80 mL/min/1.73m² (normal >60) - NORMAL
+Potassium: 4.1 mEq/L (normal 3.5-5.0) - NORMAL
+Sodium: 139 mEq/L (normal 136-145) - NORMAL
+
+MAJOR SURGERIES
+Previous:
+- Appendectomy - 03/15/2000
+  Status: Recovered well, no complications
+  Surgeon: Dr. Linda Carter, MD
+
+Scheduled:
+- None at this time
+
+RECENT IMAGING STUDIES
+
+Chest X-ray (10/15/2024):
+- Mild hyperinflation consistent with asthma
+- No acute findings
+- Relevance: Routine follow-up for asthma
+
+CLINICAL NOTES
+
+Provider Notes (10/20/2024):
+Patient reports occasional shortness of breath during exercise, likely related to asthma. Discussed proper use of albuterol inhaler. Blood pressure remains elevated; emphasized importance of dietary changes and regular exercise. Vitamin D supplementation to continue.
+
+Diet recommendations:
+- Low sodium (<2000mg/day)
+- Increase intake of fruits and vegetables
+- Limit processed foods
+
+Exercise plan:
+- 30 minutes brisk walking 5 days/week
+
+CLINICAL TRIAL SCREENING NOTES
+Patient may be eligible for:
+- Hypertension management studies
+- Asthma treatment trials
+
+Inclusion criteria met:
+✓ Hypertension with suboptimal control
+✓ Age 40-50
+✓ Willing to participate in follow-up visits
+
+Exclusion criteria to consider:
+- None reported
+
+SOCIAL HISTORY
+- Non-smoker
+- Rare alcohol use (1-2 drinks per month)
+- Married, two children
+- Works as a software engineer
+- Sedentary lifestyle, plans to increase activity
+
+FAMILY HISTORY
+- Father: Hypertension, Stroke (deceased at 68)
+- Mother: Asthma (living, age 70)
+- Sister: Healthy (age 48)
+- Brother: Hypertension (age 50)
+
+IMMUNIZATIONS
+- Influenza vaccine: 09/2024
+- COVID-19 vaccine: Booster 08/2024
+- Pneumococcal vaccine: 2022
+- Tetanus: 2020
+
+CARE TEAM
+Primary Care: Dr. Angela Brown, MD
+Pulmonologist: Dr. Kevin Green, MD
+Registered Dietitian: Sarah White, RD
+
+PATIENT GOALS
+1. Reduce BP to below 130/80 mmHg within 6 months
+2. Increase physical activity to 150 minutes per week
+3. Improve Vitamin D levels to normal range
+4. Reduce reliance on albuterol inhaler
+
+REMINDERS
+- Schedule routine lab work (fasting) for 11/15/2024
+- Refill Losartan prescription by 06/01/2024
+- Prepare questions for pulmonology check-up on 12/10/2024
+- Continue daily Vitamin D supplementation
+
+EMERGENCY CONTACTS
+Spouse: Laura Johnson - (555) 654-3210
+Son: Michael Johnson - (555) 543-2109
+Primary Care Office: (555) 432-1098
