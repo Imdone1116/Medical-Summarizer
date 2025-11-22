@@ -20,7 +20,7 @@ body {
 
 /* Header */
 .app-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #457b9d 0%, #1d3557 100%);
   color: white;
   padding: 30px 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -216,7 +216,7 @@ body {
 }
 
 .btn-primary:disabled {
-  background: linear-gradient(135deg, #cbd5e0 0%, #a0aec0 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   cursor: not-allowed;
   transform: none;
 }

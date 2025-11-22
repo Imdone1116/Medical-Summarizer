@@ -107,7 +107,7 @@ function App() {
       {/* Header */}
       <header className="app-header">
         <div className="header-content">
-          <h1>🏥 Medical Note Summarizer</h1>
+          <h1>Medical Note Summarizer</h1>
           <p className="header-subtitle">
             AI-powered medical record analysis and summarization
           </p>
@@ -119,13 +119,13 @@ function App() {
             className={`view-btn ${viewType === 'patient' ? 'active' : ''}`}
             onClick={() => setViewType('patient')}
           >
-            👤 Patient View
+            Patient View
           </button>
           <button
             className={`view-btn ${viewType === 'doctor' ? 'active' : ''}`}
             onClick={() => setViewType('doctor')}
           >
-            👨‍⚕️ Doctor View
+            Doctor View
           </button>
         </div>
       </header>

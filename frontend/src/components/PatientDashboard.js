@@ -124,7 +124,7 @@ const PatientDashboard = ({ summary, onExplainTerm }) => {
 
       {/* Welcome Message */}
       <section className="dashboard-section welcome-section">
-        <h3>Welcome! 👋</h3>
+        <h3>Welcome!</h3>
         <p>This is your personalized health summary. All information is presented in simple terms to help you better understand your health.</p>
       </section>
 
